@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background: #2E0249;
+}
+.calculator {
+  width:420px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 6px 3px 3px #570A57,
+              -6px -3px 3px #570A43;
+}
+.output {
+  font-size: 3.4em;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border: none;
+  display: block;
+  box-shadow: 6px 3px 3px #570A57,
+              -6px -3px 3px #570A43;
+  border-radius: 8px;
+
+}
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 3px;
+}
+.key{
+  background:  #A91079;
+  border: none;
+  font-size: 1.5rem;
+  color: #FBCB0A;
+  width: 70px;
+  height: 70px;
+  border-radius: 27px;
+  box-shadow: 3px 3px 3px #570A57,
+              -3px -3px 3px #570A43;
+  margin: 0.3rem;
+  cursor: pointer;
+}
+.key:active,
+.key:focus {
+  background: #A149FA;
+  box-shadow: inset 3px 3px 3px #570A57,
+              inset -3px -3px 3px #570A52;
+}
+.key-op{
+  color:white;
+}
+.key-ent{
+  grid-column: 4/5 ;
+  grid-row:2 / span 4;
+  height: auto;
+  color: white;
+}
